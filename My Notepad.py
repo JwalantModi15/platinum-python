@@ -51,7 +51,7 @@ def paste():
     TextArea.event_generate(("<<Paste>>"))
 
 def about():
-    messagebox.showinfo("About", "Notes is Created by Jwalant Modi")
+    messagebox.showinfo("About", "Notes is Created by Someone")
 def exit_notepad():
     root.destroy()
 # def blue():
@@ -77,7 +77,7 @@ def chooseColor():
         TextArea["insertbackground"] = "black"
 
 def contact():
-    messagebox.showinfo("Contact", "My Email: jwalantmodi15@gmail.com")
+    messagebox.showinfo("Contact", "My Email: someone@gmail.com")
 root = Tk()
 root.title("Untitled-Notepad")
 root.geometry("700x500")
