@@ -44,7 +44,7 @@ button_frame.pack(pady=21)
 # FUNCTIONS
 def save_list():
     file_name = filedialog.asksaveasfilename(
-        initialdir = "C:\\Users\\Jwalant Modi\\Documents",
+        initialdir = "something",
         title = "Save File",
         filetypes = (("Dat File","*.dat"),("All Files","*.*"))
     )
@@ -60,7 +60,7 @@ def save_list():
 
 def open_list():
     file_name = filedialog.askopenfilename(
-        initialdir = "C:\\Users\\Jwalant Modi\\Documents",
+        initialdir = "something",
         title = "Open File",
         filetypes = (("Dat File","*.dat"),("All Files","*.*"))
     )
