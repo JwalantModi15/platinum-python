@@ -2,7 +2,6 @@ import pygame
 import random
 import time
 import os
-os.chdir(r"C:\Users\Jwalant Modi")
 pygame.init()
 red = (255,0,0)
 gray = (119,118,119)
