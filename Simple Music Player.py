@@ -37,7 +37,7 @@ s = StringVar()
 s.set("Select Music")
 old_song = s.get()
 
-choices = os.listdir("C:\\Users\\Jwalant Modi\\Music")
+choices = os.listdir("C:Music")
 choices = choices[:-1]
 
 b = Button(root, text = "Play", width = 21, command = music_, font = ("",10))
