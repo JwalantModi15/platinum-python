@@ -3,7 +3,7 @@ import os
 import time
 import random
 pygame.font.init()
-os.chdir(r"C:\Users\Jwalant Modi")
+
 WIDTH, HEIGHT = 800, 750
 root = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Space Shooter")
