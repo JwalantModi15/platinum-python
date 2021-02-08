@@ -7,7 +7,7 @@ root.geometry("500x350")
 s = StringVar()
 root.config(bg = "lightgreen")
 def show():
-    url = "http://api.openweathermap.org/data/2.5/weather?q="+s.get()+"&appid=e55a2836a3153b9c51fccb6e97425256"
+    url = "" //Here Your API
     api_request = requests.get(url)
     api_data = api_request.json()
     city = api_data["name"]
