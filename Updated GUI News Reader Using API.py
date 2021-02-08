@@ -10,7 +10,7 @@ def main(s1):
     news_text.config(state = "normal")
     news_text.delete("1.0",END)
     if s1 == "top headlines":
-        url = "http://newsapi.org/v2/top-headlines?country=in&apiKey=0c1595a0d57a44d58264f33882471a7b"
+        url = "" // Here, News Headline API
         res = requests.get(url)
         data  = res.json()["articles"]
         s = ""
@@ -23,7 +23,7 @@ def main(s1):
         news_text.config(state = "disable")
 
     else:
-        url = "http://newsapi.org/v2/top-headlines?country=in&category="+s1+"&apiKey=0c1595a0d57a44d58264f33882471a7b"    
+        url = "" // News API   
         res = requests.get(url)
         data  = res.json()["articles"]
         s = ""
@@ -35,7 +35,7 @@ def main(s1):
         news_text.insert(END, s)
         news_text.config(state = "disable")
 
-url = "http://newsapi.org/v2/top-headlines?country=in&apiKey=0c1595a0d57a44d58264f33882471a7b"
+url = "" // Here, News Headline API
 
 res = requests.get(url)
 
