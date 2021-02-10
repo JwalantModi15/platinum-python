@@ -10,7 +10,7 @@ def move(folder_name,files):
 
 
 if __name__=='__main__':
-    s = r'C:\Users\Jwalant Modi\AppData\Local\Programs\Python\Python38-32\Python Programs\Practice Programs\Example'
+    s = r'' //Here path of Directory
     os.chdir(s)    
     files = os.listdir()
     files.remove("Arrange files in Appropriate Folder.py")
