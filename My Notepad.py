@@ -51,17 +51,10 @@ def paste():
     TextArea.event_generate(("<<Paste>>"))
 
 def about():
-    messagebox.showinfo("About", "Notes is Created by Someone")
+    messagebox.showinfo("About", "NotePad is Created by Jwalant")
 def exit_notepad():
     root.destroy()
-# def blue():
-#     TextArea.configure(background = "lightblue")
-# def green():
-#     TextArea.configure(background = "lightgreen")
-# def gray():
-#     TextArea.configure(background = "lightgray")
-# def white():
-#     TextArea.configure(background = "white")
+    
 def chooseSize():
     TextArea["font"] = ("",size.get())
 
@@ -77,7 +70,7 @@ def chooseColor():
         TextArea["insertbackground"] = "black"
 
 def contact():
-    messagebox.showinfo("Contact", "My Email: someone@gmail.com")
+    messagebox.showinfo("Contact", "My Email: jwalantmodi05@gmail.com")
 root = Tk()
 root.title("Untitled-Notepad")
 root.geometry("700x500")
@@ -87,7 +80,6 @@ TextArea.focus_set()
 TextArea.pack(expand = True,fill=BOTH)
 
 file = None
-
 
 Menubar = Menu(root)
 Filemenu = Menu(Menubar, tearoff=0)
@@ -120,27 +112,6 @@ for j in Size:
     sizeMenu.add_radiobutton(label = j, command = chooseSize, variable = size)
     c+=1
 Menubar.add_cascade(label = "Font Size", menu = sizeMenu)
-
-# spinMenu = Menu(Menubar, tearoff=0)
-# spinMenu.add_command(label = "Default-White", command = white)
-# spinMenu.add_command(label = "lightblue", command = blue)
-# spinMenu.add_command(label = "lightgreen", command = green)
-# spinMenu.add_command(label = "lightgray", command = gray)
-# Menubar.add_cascade(label = "Color Theme", menu = spinMenu)
-
-# Sizemenu = Menu(Menubar, tearoff =0)
-# Sizemenu.add_command(label = "10", command = lambda e=10: chooseSize(10))
-# Sizemenu.add_command(label = "12", command = lambda e=12: chooseSize(12))
-# Sizemenu.add_command(label = "14", command = lambda e=14: chooseSize(14))
-# Sizemenu.add_command(label = "16", command = lambda e=16: chooseSize(16))
-# Sizemenu.add_command(label = "18", command = lambda e=18: chooseSize(18))
-# Sizemenu.add_command(label = "20", command = lambda e=20: chooseSize(20))
-# Sizemenu.add_command(label = "22", command = lambda e=22: chooseSize(22))
-# Sizemenu.add_command(label = "24", command = lambda e=24: chooseSize(24))
-# Sizemenu.add_command(label = "26", command = lambda e=26: chooseSize(26))
-# Sizemenu.add_command(label = "28", command = lambda e=28: chooseSize(28))
-# Sizemenu.add_command(label = "30", command = lambda e=30: chooseSize(30))
-# Menubar.add_cascade(label = "Font size", menu = Sizemenu)
 
 Helpmenu = Menu(Menubar, tearoff = 0)
 Helpmenu.add_command(label="About Notes", command = about)
