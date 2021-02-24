@@ -10,7 +10,8 @@ def move(folder_name,files):
 
 
 if __name__=='__main__':
-    s = r'' # Here path of Directory
+    path = input("Enter Full Path: ")
+    s = rf"{path}" # Here path of Directory
     os.chdir(s)    
     files = os.listdir()
     files.remove("Arrange files in Appropriate Folder.py")
