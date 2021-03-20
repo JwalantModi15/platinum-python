@@ -20,7 +20,7 @@ def stop():
 
 def music():
     pygame.mixer.init()
-    pygame.mixer.music.load(r"C:\Users\Jwalant Modi\Music\1.mp3")
+    pygame.mixer.music.load(r"1.mp3")
     pygame.mixer.music.play()
 
 l1 = Label(root, text = "Alarm Clock", font = ("", 21))
