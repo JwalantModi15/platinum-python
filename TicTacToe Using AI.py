@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 import random
-import pygame
+
 root = Tk()
 root.title("Tic Tac Toe")
 root.geometry("366x360")
@@ -75,14 +75,10 @@ def reset():
         b[i]["text"] = ""
 
     index_list = [0,1,2,3,4,5,6,7,8]    
-    pygame.mixer.music.play()
 
 b = []
 c=1
 index_list = [0,1,2,3,4,5,6,7,8]
-pygame.mixer.init()
-pygame.mixer.music.load(r"C:\Users\Jwalant Modi\Music\1.mp3")
-pygame.mixer.music.play()
 for i in range(3):
     for j in range(3):
         b1 = Button(root, text = "", font = ("Arial", 21), width = 7, height = 3)
