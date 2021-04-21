@@ -15,7 +15,6 @@ class Ui_MainWindow(object):
     l = ["1","@","3","12","5","Bomb","7","8","9","10","A","B","50","D","E","I","J","$","%","*","100",
         "21","23","25","15"]
     c=0
-    # l1 = [i for i in range(0,25)]
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -214,10 +213,6 @@ class Ui_MainWindow(object):
 
     def press_it(self, b):
         if b.text()=="":
-            # n = choice(self.l1)
-            # b.setText(self.l[n])
-            # print(self.l[n])
-            # self.l1.remove(n)
             n = randint(0, 24)
             self.c+=1
             if self.l[n] == "Bomb":
@@ -231,9 +226,7 @@ class Ui_MainWindow(object):
                     if self.winner():
                         QtWidgets.QMessageBox.about(b, "Congratulations", "You Wins!")
                         self.reset()
-            
-
-            # print(self.l[n])
+                        
     def winner(self):
         return (self.b1.text()!="" and self.b2.text()!="" and self.b3.text()!="" and self.b4.text()!="" and self.b5.text()!="" and
                 self.b6.text()!="" and self.b7.text()!="" and self.b8.text()!="" and self.b9.text()!="" and self.b10.text()!="" and
