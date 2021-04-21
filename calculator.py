@@ -187,15 +187,6 @@ class Ui_MainWindow(object):
         self.b20.setText(_translate("MainWindow", "="))
         self.menuCalculator.setTitle(_translate("MainWindow", "Calculator"))
 
-    # def plus_minus(self):
-    #     s = self.l1.text()
-    #     if s[0] == "0" and len(s) == 1:
-    #         self.l1.setText("-")
-    #     elif s[0] == "-":
-    #         self.l1.setText(s[1:])
-    #     else:
-    #         self.l1.setText("-"+s)
-
     def equal(self):
         s = self.l1.text()
         try:
